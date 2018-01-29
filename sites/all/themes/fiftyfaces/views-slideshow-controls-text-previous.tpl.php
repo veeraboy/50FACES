@@ -1,0 +1,1 @@
+<span id="views_slideshow_controls_text_previous_<?php print $variables['vss_id']; ?>" class="<?php print $classes; ?>"><a href="#" id="preid" class="prev"><img src="<?php print base_path().path_to_theme()?>/images/previous.png" alt="" /></a></span>

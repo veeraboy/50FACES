@@ -1,0 +1,625 @@
+
+* { margin:0; padding:0; }
+
+/*@font-face {
+	font-family: Open Sans;
+	src: local("Open Sans"), local("Open Sans"), url(../fonts/OpenSans-Regular_0.ttf);
+	src: local("Open Sans"), local("Open Sans"), url(../fonts/OpenSans-Light_0.ttf);
+	src: local("Open Sans"), local("Open Sans"), url(../fonts/OpenSans-Semibold_0.ttf);
+	font-weight:normal;
+	
+}*/
+
+body {
+     font-family:Raleway;
+    font-weight: normal;
+}
+
+
+
+
+.wrap_box {
+    float: left;
+    height: auto;
+    margin-bottom:4px;
+    margin-right:4px;
+    width:418px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+a {
+/*-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;*/
+}
+a:hover {
+/*-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;*/
+}
+
+
+
+
+/* Premium Listing */
+.premlist {
+zoom: 1;
+float:left;
+}
+.premlist:before, .premlist:after {
+content: "";
+display: table;
+}
+.premlist:after {
+clear: both;
+}
+.premlist h2 {
+margin:0 0 10px;
+font-weight: normal;
+}
+/* Focus Grid */
+.premlist .focusGrid {
+float:left;
+width:408px;
+display:block;
+overflow:hidden;
+line-height:16px;
+margin:0 0 10px 0;
+}
+.premlist .focusGrid .imagebox {
+width:auto;
+height:364px;
+margin:0 0 4px;
+position:relative;
+}
+.premlist .focusGrid .imagebox span.downpoint {
+position:absolute;
+display:block;
+width:48px;
+height:48px;
+overflow:hidden;
+text-transform:uppercase;
+text-indent:-1000px;
+background:url(../images/renonation_sprites.png) no-repeat 1px -240px #00adef;
+-webkit-border-radius: 200px;
+border-radius: 200px;
+-webkit-box-shadow:  0px -0 10px 0 rgba(0, 0, 0, .5);
+box-shadow:  0px 0 10px 0 rgba(0, 0, 0, .5);
+z-index:10;
+top:340px;
+left:184px;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}
+.premlist .focusGrid:hover .imagebox span.downpoint {
+top:345px;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}
+.premlist .focusGrid .imagebox a.gridimage {
+display:block;
+height:364px;
+width:408px;
+overflow:hidden;
+}
+.premlist .focusGrid .imagebox a.gridimage img {
+width:auto;
+height:364px;
+margin:0 0 0 -25%;
+border:0;
+outline:none;
+}
+.premlist .focusGrid .infobox {
+background-color:#111;
+width:372px; /*height:140px;*/
+height:324px;
+padding:35px 18px 5px;
+zoom: 1;
+position:relative;
+overflow:hidden;
+}
+.premlist .focusGrid .infobox:before, .premlist .focusGrid .infobox:after {
+content: "";
+display: table;
+}
+.premlist .focusGrid .infobox:after {
+clear:both;
+}
+.premlist .focusGrid .infobox .logobox {
+display:block;
+width:135px;
+height:103px;
+border:2px solid white;
+float:left;
+margin:0 10px 20px 0;
+}
+.premlist .focusGrid .infobox .logobox a {
+display:block;
+}
+.premlist .focusGrid .infobox .logobox img {
+width:135px;
+}
+.premlist .focusGrid .infobox .mDetail {
+float:left;
+width:221px;
+height:65px;
+overflow:hidden;
+}
+.premlist .focusGrid .infobox .mDetail h5 {
+ font-family:"Open Sans", sans-serif;
+font-weight: normal;
+font-size:18px;
+color:#FFF;
+margin:0 0 5px;
+}
+.premlist .focusGrid .infobox .mDetail .tag-line {
+font-size:12px;
+color:#999;
+}
+.premlist .focusGrid .infobox .rateCol {
+float:left;
+width:221px;
+height:40px;
+zoom: 1;
+color:#999;
+font-size:12px;
+}
+.premlist .focusGrid .infobox .rateCol:before, .premlist .focusGrid .infobox .rateCol:after {
+content: "";
+display: table;
+}
+.premlist .focusGrid .infobox .rateCol:after {
+clear: both;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox {
+float:left;
+width:155px;
+height:40px;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox .textag {
+text-align:center;
+display:block;
+margin:0 0 5px;
+color:#999;
+font-size:11px;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox ul.rating {
+float:left;
+width:120px;
+margin:0;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox ul.rating li {
+float:left;
+text-transform:uppercase;
+text-indent:-1000px;
+overflow:hidden;
+width:20px;
+height:20px;
+position:relative;
+margin:0 3px 0 0;
+background:url(../images/renonation_sprites.png) no-repeat -120px -245px;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox ul.fourstar li.five,  .premlist .focusGrid .infobox .rateCol .rrbox ul.threestar li.four, .premlist .focusGrid .infobox .rateCol .rrbox ul.threestar li.five,  .premlist .focusGrid .infobox .rateCol .rrbox ul.twostar li.three, .premlist .focusGrid .infobox .rateCol .rrbox ul.twostar li.four, .premlist .focusGrid .infobox .rateCol .rrbox ul.twostar li.five,  .premlist .focusGrid .infobox .rateCol .rrbox ul.onestar li.two, .premlist .focusGrid .infobox .rateCol .rrbox ul.onestar li.three, .premlist .focusGrid .infobox .rateCol .rrbox ul.onestar li.four, .premlist .focusGrid .infobox .rateCol .rrbox ul.onestar li.five,  .premlist .focusGrid .infobox .rateCol .rrbox ul.nostar li.one, .premlist .focusGrid .infobox .rateCol .rrbox ul.nostar li.two, .premlist .focusGrid .infobox .rateCol .rrbox ul.nostar li.three, .premlist .focusGrid .infobox .rateCol .rrbox ul.nostar li.four, .premlist .focusGrid .infobox .rateCol .rrbox ul.nostar li.five {
+background-position:-180px -245px!important;
+}
+/*.premlist .focusGrid .infobox .rateCol .rrbox ul.rating li:before, .premlist .focusGrid .infobox .rateCol .rrbox ul.rating li:after { position: absolute; content: ""; left: 10px; top: 0; width: 10px; height: 17px; background:#019ee1; -moz-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%; }
+.premlist .focusGrid .infobox .rateCol .rrbox ul.rating li:after {  left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -o-transform-origin: 100% 100%; transform-origin :100% 100%; }*/
+/* 5 Star */
+/*.premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.one:before, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.one:after, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.two:before, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.two:after, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.three:before, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.three:after, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.four:before, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.four:after, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.five:before, .premlist .focusGrid .infobox .rateCol .rrbox ul.fivestar li.five:after { background:#019ee1; }*/
+
+.premlist .focusGrid .infobox .rateCol .rrbox .numrr {
+float:left;
+width:28px;
+height:20px;
+background-color:#555;
+text-align:center;
+color:#FFF;
+font-size:12px;
+line-height:20px;
+position: relative;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+position:relative;
+margin-left:2px;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox .numrr:before {
+content:"";
+position: absolute;
+left:10px;
+top: 20px;
+width: 0;
+height: 0;
+border-top: 5px solid #555;
+border-left: 0px solid transparent;
+border-right: 5px solid transparent;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox .numrr a {
+text-decoration:none;
+color:#FFF;
+}
+.premlist .focusGrid .infobox .rateCol .rrbox .numrr:hover {
+background-color:#666;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+.premlist .focusGrid .infobox .rateCol .rScore {
+width:61px;
+float:left;
+text-align:center;
+ font-family:Raleway;
+font-size:18px;
+color:#009ee1;
+margin-left:5px;
+display: none;
+}
+.premlist .focusGrid .infobox .rateCol .rScore .textag {
+text-align:center;
+display:block;
+margin:0 0 8px;
+ font-family:Raleway;
+color:#999;
+}
+.premlist .focusGrid .infobox .extrainfo {
+clear:both;
+color:#CCC;
+margin-bottom:20px;
+font-size:12px;
+}
+.premlist .focusGrid .infobox .extrainfo p {
+margin:0 0 15px 0;
+padding:0;
+}
+.premlist .focusGrid .infobox .readmorebar {
+clear:both;
+position:absolute;
+bottom:0;
+left:0;
+}
+.premlist .focusGrid .infobox .readmorebar a {
+display:block;
+width:408px;
+text-align:center;
+text-transform:uppercase;
+text-decoration:none;
+background-color:#393939;
+color:#888;
+line-height:30px;
+font-size:14px;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+.premlist .focusGrid .infobox .readmorebar a:hover {
+background-color:#333;
+color:#CCC;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+.premlist .norGrid {
+width:418px;
+height:268px;
+overflow:hidden;
+position:relative;
+z-index:15;
+}
+.premlist .norGrid .norimage {
+position:absolute;
+z-index:18;
+top:0;
+left:0;
+width:418px;
+height:268px;
+overflow:hidden;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}
+.premlist .norGrid .norimage a.gridimage {
+display:block;
+}
+.premlist .norGrid .norimage a.gridimage img {
+border:none;
+float: left;
+height:268px;
+width:418px;
+}
+
+
+.premlist .norGrid .norinfo {
+text-align:center;
+position:absolute;
+top:268px;
+left:0;
+width:418px;
+height:268px;
+z-index:19;
+border:none;
+
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}
+.premlist .norGrid .norinfo h5 {
+color: #000000;
+display: block;
+ font-family:Raleway;
+font-size: 13px;
+font-weight: bold;
+overflow: hidden;
+padding: 15px 0 10px;
+text-align: center;
+text-decoration: none;
+}
+
+
+.premlist .norGrid .norinfo p {
+color: #666666;
+display: block;
+ font-family:Raleway;
+font-weight: normal;
+line-height: 18px;
+padding: 0 10px;
+text-align: center;
+text-decoration: none;
+}
+
+.premlist .norGrid .norinfo a {
+width: auto;
+height: auto;
+color: #fff;
+font-size: 56px;
+font-weight: normal;
+text-decoration: none;
+float: left;
+text-transform: uppercase;
+padding: 90px 20px 20px 20px;
+text-align: center;
+width: 378px;
+line-height: 82px;
+}
+
+
+.premlist .norGrid .norinfo a:hover {
+text-decoration:none;
+}
+
+
+.premlist .norGrid .norinfo .idbox {
+padding:10px 0 0;
+margin:0 0 8px;
+position:relative;
+}
+.premlist .norGrid .norinfo .idbox .renoscore {
+display: none;
+position:absolute;
+width:35px;
+height:40px;
+text-align:center;
+-webkit-border-radius:100px 0 0 0;
+border-radius:100px 0 0 0;
+ font-family:Raleway;
+color:#FFF;
+font-size:14px;
+background-color:#222;
+line-height:45px;
+top:-70px;
+padding-left:5px;
+right:0px;
+-webkit-transition: all .1s ease-out;
+-moz-transition: all .1s ease-out;
+-o-transition: all .1s ease-out;
+transition: all .1s ease-out;
+}
+.premlist .norGrid:hover .norinfo .idbox .renoscore {
+-webkit-border-radius:100px;
+border-radius:100px;
+-webkit-box-shadow: 0px 0 3px 0 rgba(0, 0, 0, .8);
+box-shadow:  0px 0 3px 0 rgba(0, 0, 0, .8);
+padding-left:0;
+width:28px;
+height:28px;
+line-height:28px;
+font-size:14px;
+top:2px;
+right:26px;
+background-color:#00adef;
+color:#FFF;
+-webkit-transition: all .3s ease-out;
+-moz-transition: all .3s ease-out;
+-o-transition: all .3s ease-out;
+transition: all .3s ease-out;
+}
+.premlist .norGrid .norinfo .idbox .logobox {
+display:block;
+height:80px;
+}
+.premlist .norGrid .norinfo .idbox .logobox a.logoimage {
+display:block;
+}
+.premlist .norGrid .norinfo .idbox .logobox a.logoimage img {
+outline:none;
+border:0;
+width:10px;
+height:auto;
+display:block;
+opacity:0;
+margin:0 auto;
+border:2px solid #FFF;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+.premlist .norGrid:hover .norinfo .idbox .logobox a.logoimage img {
+width:100px;
+margin:0 auto;
+opacity:1;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+.premlist .norGrid .norinfo .rrbox {
+font-size:12px;
+color:#999;
+margin:5px 20px;
+}
+.premlist .norGrid .norinfo .rrbox .textag {
+text-align:center;
+display:block;
+margin:0 0 5px;
+color:#999;
+font-size:11px;
+}
+.premlist .norGrid .norinfo .rrbox ul.rating {
+float:left;
+width:110px;
+margin: 0;
+size:120%;
+-webkit-transition: all .1s ease-out;
+-moz-transition: all .1s ease-out;
+-o-transition: all .1s ease-out;
+transition: all .1s ease-out;
+}
+.premlist .norGrid .norinfo .rrbox ul.rating li {
+float:left;
+text-transform:uppercase;
+text-indent:-1000px;
+overflow:hidden;
+width:18px;
+height:18px;
+position:relative;
+margin:0 3px 0 0;
+background:url(../images/renonation_sprites.png) no-repeat -120px -265px;
+}
+.premlist .norGrid .norinfo .rrbox ul.fourstar li.five,  .premlist .norGrid .norinfo .rrbox ul.threestar li.four, .premlist .norGrid .norinfo .rrbox ul.threestar li.five,  .premlist .norGrid .norinfo .rrbox ul.twostar li.three, .premlist .norGrid .norinfo .rrbox ul.twostar li.four, .premlist .norGrid .norinfo .rrbox ul.twostar li.five,  .premlist .norGrid .norinfo .rrbox ul.onestar li.two, .premlist .norGrid .norinfo .rrbox ul.onestar li.three, .premlist .norGrid .norinfo .rrbox ul.onestar li.four, .premlist .norGrid .norinfo .rrbox ul.onestar li.five,  .premlist .norGrid .norinfo .rrbox ul.nostar li.one, .premlist .norGrid .norinfo .rrbox ul.nostar li.two, .premlist .norGrid .norinfo .rrbox ul.nostar li.three, .premlist .norGrid .norinfo .rrbox ul.nostar li.four, .premlist .norGrid .norinfo .rrbox ul.nostar li.five {
+background-position:-180px -265px!important;
+}
+
+
+
+.premlist .norGrid .norinfo .rrbox .numrr {
+float:left;
+width:26px;
+height:18px;
+background-color:#555;
+text-align:center;
+color:#FFF;
+font-size:11px;
+line-height:18px;
+position: relative;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+position:relative;
+margin-left:2px;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+.premlist .norGrid .norinfo .rrbox .numrr:before {
+content:"";
+position: absolute;
+left:10px;
+top: 18px;
+width: 0;
+height: 0;
+border-top: 5px solid #555;
+border-left: 0px solid transparent;
+border-right: 5px solid transparent;
+}
+.premlist .norGrid .norinfo .rrbox .numrr a {
+text-decoration:none;
+color:#FFF;
+}
+.premlist .norGrid .norinfo .rrbox .numrr:hover {
+background-color:#666;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+.premlist .norGrid:hover .norimage {
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+
+}
+.premlist .norGrid:hover .norinfo, #commercial .premlist .norGrid:hover .norinfo {
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+top:0px;
+background-color:rgba(207, 24, 24, 0.64);
+behavior: url(PIE/PIE.htc);
+}
+.floatsidead {
+position:relative;
+width:100%;
+}
+.floatsidead .fsLeft {
+position:absolute;
+width:130px;
+height:480px;
+display:block;
+top:30px;
+left:-135px;
+}
+.floatsidead .fsRight {
+position:absolute;
+width:130px;
+height:480px;
+display:block;
+top:30px;
+right:-135px;
+}
+.floatsidead a, .floatsidead a img {
+border:0;
+outline:none;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}
+.floatsidead a img {
+opacity:.8;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}

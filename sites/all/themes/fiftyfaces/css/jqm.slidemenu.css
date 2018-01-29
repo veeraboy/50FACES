@@ -1,0 +1,200 @@
+.slidemenu {
+	position: absolute;
+	top:0;
+	left: 0px !important;
+	width:0;
+	height: 100%;
+	background-color: #fff;
+	z-index: 2147483647;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.slidemenu h3{
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#8C919F;
+	text-shadow: 0 1px 0 #272D39;
+	margin:0;
+	padding:4px 0 4px 10px;
+	background: rgb(67,74,94); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(67,74,94,1) 0%, rgba(57,64,82,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(67,74,94,1)), color-stop(100%,rgba(57,64,82,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(67,74,94,1) 0%,rgba(57,64,82,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(67,74,94,1) 0%,rgba(57,64,82,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(67,74,94,1) 0%,rgba(57,64,82,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(67,74,94,1) 0%,rgba(57,64,82,1) 100%); /* W3C */
+	border-top:solid #4E5567 1px;
+	border-bottom:solid #242A37 1px;
+}
+
+.slidemenu ul {
+	margin: 0;
+	padding: 0;
+	width: inherit;
+}
+
+.slidemenu ul li {
+	list-style-type: none;
+	margin: 0px 0;
+}
+
+.slidemenu ul li a:link, .slidemenu ul li a:visited {
+	    background: none repeat scroll 0 0 #ee0000;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: 100%;
+	font-family:Raleway;
+}
+
+
+.slidemenu ul li img {
+	margin-right:8px;
+}
+
+.slidemenu ul li a:hover, .slidemenu ul li a:active {
+	background-color: #000000;
+}
+		
+.ui-icon-smico {
+	background-image: url("../images/responsive_menu_icon.png ") !important;
+}
+
+.slidemenu_btn .ui-icon-shadow {
+	-moz-box-shadow: 0 0px 0 rgba(255,255,255,0);
+	-webkit-box-shadow: 0 0px 0 rgba(255,255,255,0);
+	box-shadow: 0 0px 0 rgba(255,255,255,0);
+}
+
+.slidemenu_btn .ui-btn-inner {
+	border-top: 0px;
+}
+.slidemenu_btn .ui-icon {
+	margin: 4px 1px 2px 2px !important;
+	width: 25px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.slidemenu_btn .ui-icon, .ui-icon-searchfield::after {
+	background: none;
+}
+
+.slidemenu_btn.ui-btn-icon-notext {
+	width: 30px;
+	
+}
+
+/* THESE ARE JUST EXAMPLE STYLES BELOW */
+
+#profile {
+	background-color:#32394A;
+	border-bottom: 1px solid #242A37;
+	overflow: hidden;
+	height: 58px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile_info {
+	position: relative;
+	left: 68px;
+	top:-49px;
+	font-size: 14px;
+	color: #C4CCDA;
+	text-shadow: 0 0px 0 black;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+	display:none;
+}
+
+.ui-btn-icon-notext .ui-btn-inner {
+	background:url(../images/responsive_menu_icon.png) no-repeat scroll 0 0 !important;
+
+}
+
+.ui-btn-icon-notext .ui-btn-inner.acmenu {
+	 background: url("../images/acmenu.png") no-repeat scroll center center #ee0000 !important;
+    border-radius: 3px;
+    height: 22px;
+    width: 34px;
+	display: block;
+}
+
+.back_menu {
+	  background: url("../images/back_menu.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    height: 30px;
+    width: 28px;
+}
+
+
+#another_page3 {
+	left:0px !important;
+outline:none !important;
+}
+
+.slidemenu ul li a.menu1 {
+	  background: url("../images/home_icon1.png") no-repeat scroll 10px center #ee0000 !important;
+    padding-left: 45px !important;
+}
+
+.slidemenu ul li a.menu1:hover {
+	  background: url("../images/home_icon1.png") no-repeat scroll 10px center #000 !important;
+}
+
+
+.slidemenu ul li a.menu2 {
+	  background: url("../images/aboutus_icon1.png") no-repeat scroll 10px center #ee0000 !important;
+    padding-left: 45px !important;
+}
+
+.slidemenu ul li a.menu2:hover {
+	  background: url("../images/aboutus_icon1.png") no-repeat scroll 10px center #000 !important;
+}
+
+.slidemenu ul li a.menu3 {
+	  background: url("../images/profile_icon1.png") no-repeat scroll 10px center #ee0000 !important;
+    padding-left: 45px !important;
+}
+
+.slidemenu ul li a.menu3:hover {
+	  background: url("../images/profile_icon1.png") no-repeat scroll 10px center #000 !important;
+}
+
+.slidemenu ul li a.menu4 {
+	  background: url("../images/contactus_icon1.png") no-repeat scroll 10px center #ee0000 !important;
+    padding-left: 45px !important;
+}
+
+.slidemenu ul li a.menu4:hover {
+	  background: url("../images/contactus_icon1.png") no-repeat scroll 10px center #000 !important;
+}
+
+
+.slidemenu ul li a.menu5 {
+	  background: url("../images/lan_icon.png") no-repeat scroll 10px center #ee0000 !important;
+    padding-left: 45px !important;
+}
+
+.slidemenu ul li a.menu5:hover {
+	  background: url("../images/lan_icon.png") no-repeat scroll 10px center #000 !important;
+}
+
+.slidemenu ul li a.menu6 {
+	  background: url("../images/lan_icon.png") no-repeat scroll 10px center #ee0000 !important;
+    padding-left: 45px !important;
+}
+
+.slidemenu ul li a.menu6:hover {
+	  background: url("../images/lan_icon.png") no-repeat scroll 10px center #000 !important;
+}
+

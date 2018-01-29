@@ -1,0 +1,5 @@
+name = Webform send yourself mail
+description = This module displays a option to send your self mail.
+package = Webform
+version = 7.x-4.0
+core = 7.x

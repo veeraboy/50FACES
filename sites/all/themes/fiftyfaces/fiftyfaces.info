@@ -1,0 +1,32 @@
+name = 50 Faces
+description = A multi-column theme which can be configured to modify colors and switch between fixed and fluid width layouts.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+stylesheets[all][] = mouseover.css
+stylesheets[all][] = jquery.mCustomScrollbar.css
+scripts[] = js/jquery.scrollTo-1.4.3.1-min.js
+scripts[] = js/jquery.aw-showcase.js
+
+settings[fiftyfaces_width] = fluid
+regions[sidebar_first]  = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[page_top] = Page Top
+regions[page_bottom] = Page 
+regions[language_switch] = language Switch 
+regions[banner] = Banner 
+regions[menu] = Menu 
+regions[resmenu] = Responsive Menu 
+regions[profile_page] = Profile Page
+; Information added by Drupal.org packaging script on 2014-08-06
+version = "7.31"
+project = "drupal"
+datestamp = "1407346433"
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="jquery.bxslider.css" type="text/css" />
+<script src="jquery.bxslider.js"></script>
+
+</head>
+
+<body>
+<ul class="bxslider">
+  <li><img src="/images/730_200/hill_trees.jpg" /></li>
+  <li><img src="/images/730_200/me_trees.jpg" /></li>
+  <li><img src="/images/730_200/houses.jpg" /></li>
+</ul>
+
+<div class="outside">
+  <h3>This div is outside of the slider</h3>
+  <p><span id="slider-prev"></span> | <span id="slider-next"></span></p>
+</div>
+
+<script>
+$('.bxslider').bxSlider({
+  nextSelector: '#slider-next',
+  prevSelector: '#slider-prev',
+  nextText: 'Onward →',
+  prevText: '← Go back'
+});
+
+</script>
+</body>
+</html>

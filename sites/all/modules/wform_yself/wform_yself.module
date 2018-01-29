@@ -1,0 +1,73 @@
+<?php
+function wform_yself_webform_form_alter(&$form, &$form_state, $form_id) {
+
+echo $form_id;
+     error_reporting(E_ALL);
+     ini_set('display_errors', 1);   
+     // webform_client_form_52  webform id
+     if($form_id == 'webform_client_form_10') {     
+         $form['submitted']['send_a_mail_yourself'] = array(
+         '#type' => checkbox,
+         '#form_key' => 'send_a_mail_yourself',
+         '#title'=> 'Send a copy of yourself',
+         '#weight' => 4, // As your needed
+         '#field_prefix' => '<div id=\'send_a_mail_yourself\'>',
+         '#field_suffix' => '</div>',
+         '#default_value' => array('yes' => t('send a copy of yourself')),
+       );
+       $form['#submit'][] = 'wform_yself_webform_submit';
+
+       }
+     }
+
+   function wform_yself_webform_submit($form, &$form_state) {        
+     $param = array();
+     foreach($form_state['input']['submitted'] as $key => $values) {
+        if(valid_email_address($values)) {
+             $to = $values; //to email address
+        }
+        else if($key == 'send_a_mail_yourself' && $values == 1) {                    
+              $send_a_mail = $values;  // Check send a mail to yourself checkbox
+
+        } else {
+          if($values) {
+               $param[]  = $values;  // All remaining values to store to param array for use of email body
+          }
+        }            
+       } 
+
+          if($send_a_mail == 1) {                  
+         $from = 'noreply@example.com';
+                 foreach($param as $param_values) {
+            $body[] = $param_values;
+           }
+
+        $to = $to; // Set this email address - emails will be sent to this email address!
+        $params = array(
+            'body' => $body,
+            'subject' => 'Website Information Request',
+     );
+        if (drupal_mail('wform_yself_webform', 'some_mail_key', $to, language_default(), $params, $from, TRUE)) {
+            drupal_set_message('Thanks, we will be in contact with more information soon.');
+     } else {
+            drupal_set_message('There was an error subscribing you. Please try again later');
+        }
+
+    }      
+  }
+
+ function wform_yself_webform_mail($key, &$message, $params) {
+     $headers = array(
+         'MIME-Version' => '1.0',
+         'Content-Type' => 'text/html; charset=UTF-8;',
+         'Content-Transfer-Encoding' => '8Bit',
+         'X-Mailer' => 'Drupal'
+    );
+    foreach ($headers as $key => $value) {
+         $message['headers'][$key] = $value;
+    }
+      $message['subject'] = $params['subject'];
+      $message['body'] = $params['body'];
+ }
+ 
+ ?>

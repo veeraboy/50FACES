@@ -1,0 +1,7 @@
+[28-Apr-2015 13:57:08 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 72 bytes) in /home/pvallorg/public_html/50faces.sg/includes/menu.inc on line 3750
+[28-Apr-2015 14:00:12 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 9061 bytes) in /home/pvallorg/public_html/50faces.sg/includes/database/mysql/query.inc on line 84
+[28-Apr-2015 14:02:34 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 72 bytes) in /home/pvallorg/public_html/50faces.sg/includes/menu.inc on line 3753
+[28-Apr-2015 14:11:39 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 32 bytes) in /home/pvallorg/public_html/50faces.sg/includes/menu.inc on line 3743
+[28-Apr-2015 15:35:43 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 113 bytes) in /home/pvallorg/public_html/50faces.sg/includes/menu.inc on line 2777
+[28-Apr-2015 15:38:38 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 72 bytes) in /home/pvallorg/public_html/50faces.sg/includes/menu.inc on line 3739
+[28-Apr-2015 17:44:11 Asia/Singapore] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 72 bytes) in /home/pvallorg/public_html/50faces.sg/includes/menu.inc on line 3748
